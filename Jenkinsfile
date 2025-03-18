@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     build 'PES1UG22CS694-1'
-                    sh 'g++ -o meow main/hello.cpp'
+                    sh 'g++ -o hello main/hello.cpp'
                 }
             }
         }
@@ -14,7 +14,7 @@ pipeline {
         stage('Test') {
             steps {
                 script {
-                    sh './meow'
+                    sh './hello'
                 }
             }
         }

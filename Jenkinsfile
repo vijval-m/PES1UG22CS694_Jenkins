@@ -14,7 +14,7 @@ pipeline {
         stage('Test') {
             steps {
                 script {
-                    sh './hello'
+                    sh './hell'
                 }
             }
         }
